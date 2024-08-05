@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=<th>.0">
+    <title>{{title}} </title>
+    <link rel="stylesheet" href="{% static 's.css' %}">
+</head>
+<body style="background-color: rgb(107, 6, 117);">
+
+   {% include "nave.html" %}
+   
+    <div class="students">
+        <h1>{{student}} </h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            {{form.as_p}}
+            {% csrf_token %}
+            <button type="submit">SUBMIT</button>
+          </form>
+    </div>
+    {% block hemaraj %}
+   
+    {% endblock %}
+</body>
+</html>

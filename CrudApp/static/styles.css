@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.student{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.students{
+    margin: 10px 430px;
+    border: 1px solid black;
+    width: 36%;
+    padding: 10px;
+    font-size: 24px;
+    color: rgba(11, 0, 12, 0.713);
+    background-color: rgb(225, 235, 239);
+}
+.students h1{
+    text-align: center;
+    color: rgb(24, 24, 116);
+}
+.students button{
+    width: 50%;
+    font-size: 20px;
+    margin: 0px 100px;
+    padding: 10px;
+    color: rgb(5, 54, 5);
+    cursor: pointer;
+    
+}
+
+
+
+/* //navigation bars// */
+nav li{
+    display: inline-block;
+    margin:0px 15px;
+    font-size: 32px;
+    color:white;
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    background-color: rgb(44, 19, 10);
+}
+.head{
+    text-align: center;
+    display: flex;
+    font-size: 50px;
+    margin: 10px 0;
+    font-weight: bolder;
+    color: rgb(28, 206, 215);
+}
+nav ul{
+    margin: 20px 80px;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:beige;
+}
+a:hover{
+    color:cadetblue;
+}
+
+
+
+/* //student table// */
+
+.student_table{
+    margin: 10px 40px;
+}
+table tr,td,th{
+    border: 1.8px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 17.9px;
+}
+table td{
+    color: darkblue;
+    font-weight: bolder;
+}
+.student_table a{
+    color: red;
+}
+.student_table th{
+    background-color: red;
+    
+}
+.student_table th{
+    background-color: red;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+table td{
+  text-align: center;
+}

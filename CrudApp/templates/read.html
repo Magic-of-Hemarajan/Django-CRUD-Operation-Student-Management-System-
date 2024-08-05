@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Detials</title>
+</head>
+<body style="background-color: azure;">
+  {% extends "nave.html" %}
+  {% block navigations %}
+  <div class="student_table">
+    <table class="center">
+   
+      <tr>
+        <th>ID</th>
+          <th>Name</th> 
+          <th>Father Name</th>
+          <th>Mother Name</th>
+          <th>Age</th>
+          <th>College Name</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Images</th>
+          <th>Update</th>
+          <th>Delete</th>
+      </tr>
+      {% for x in details  %}
+      <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.Name}}</td>
+        <td>{{x.Father_Name}}</td>
+        <td>{{x.Mother_Name}}</td>
+        <td>{{x.Age}}</td>
+        <td>{{x.College_Name}}</td>
+        <td>{{x.Address}}</td>
+        <td>{{x.Email}}</td>
+        <td>{{x.Phone_Number}}</td>
+        <td><!--{{x.Upload_images}} --><img src="{{x.Upload_images.url}}" alt="{{x.Upload_images}}" width="100px" height="100px"> </td>
+        <td><a href="{% url 'student_update' x.id %}">Update</a></td>
+        <td><a href="{% url 'student_deleted' x.id %}">Delete</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+      
+  {% endblock navigations %}
+   
+  
+  </div>
+</body>
+</html>
